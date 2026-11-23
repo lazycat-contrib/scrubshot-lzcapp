@@ -1,0 +1,18 @@
+application:
+  subdomain: scrubshot
+  multi_instance: false
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: http://scrubshot:80/
+
+services:
+  scrubshot:
+    # ghcr.io/dockers-x/scrubshot:latest (auto-built from strugglesky/scrubshot)
+    image: ghcr.1ms.run/dockers-x/scrubshot:latest@sha256:3752aa214e88399aa083ae7a4f31dfd75aec1ca774c899cfbd16f54b2f3ddbb6
+
+usage: |
+  打开即用，无需账号：粘贴（Ctrl+V）或拖入截图，应用会自动标出手机号、身份证、银行卡、
+  Token、地址等敏感信息，点击一键涂掉，再复制或导出处理后的图片。
+  所有识别与涂改都在浏览器本地完成，图片不上传、可断网使用。

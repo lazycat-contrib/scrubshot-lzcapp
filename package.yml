@@ -1,0 +1,20 @@
+package: community.lazycat.app.scrubshot
+version: 1.0.0
+name: Scrubshot
+description: "Paste a screenshot and redact sensitive info—phone numbers, ID numbers, bank cards, tokens, addresses—in one stroke. Runs entirely in your browser."
+min_os_version: 1.5.0
+author: strugglesky
+license: MIT
+homepage: https://github.com/strugglesky/scrubshot
+
+locales:
+  zh:
+    name: "Scrubshot"
+    description: "粘贴截图，一键涂掉手机号、身份证、银行卡、Token、地址等敏感信息。图片全程留在浏览器里，不上传、可断网使用。"
+  en:
+    name: "Scrubshot"
+    description: "Paste a screenshot and redact sensitive info—phone numbers, ID numbers, bank cards, tokens, addresses—in one stroke. Runs entirely in your browser."
+
+permissions:
+  required:
+    - net.internet
